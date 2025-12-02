@@ -1,0 +1,21 @@
+# Stereo Vision - Обчислення карти глибини
+# Python 3.8+
+
+# Основні бібліотеки
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Комп'ютерний зір
+opencv-python>=4.5.0
+opencv-contrib-python>=4.5.0  # Для SIFT та інших алгоритмів
+
+# Утиліти
+scipy>=1.7.0
+tqdm>=4.62.0
+
+# Опційно: для Jupyter notebook
+# jupyter>=1.0.0
+# ipywidgets>=7.6.0
+

@@ -1,0 +1,24 @@
+numpy>=1.23.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+scikit-learn>=1.3.0
+
+# TensorFlow з GPU підтримкою (виберіть один варіант):
+
+# Варіант 1 (РЕКОМЕНДОВАНО для TF 2.16+): Все в одному пакеті
+tensorflow[and-cuda]>=2.16.0
+
+# Варіант 2: Якщо вже встановлений TensorFlow 2.16+, додайте CUDA бібліотеки:
+# nvidia-cudnn-cu12
+# nvidia-cuda-runtime-cu12
+# nvidia-cublas-cu12
+# nvidia-cuda-nvrtc-cu12
+
+# Варіант 3: Старіша версія TensorFlow 2.10 (стабільна, але застаріла):
+# tensorflow==2.10.0
+# nvidia-cudnn-cu11==8.6.0.163
+
+Pillow>=10.0.0
+
+

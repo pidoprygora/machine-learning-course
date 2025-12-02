@@ -1,0 +1,17 @@
+# to start docker compose run: docker compose -f 01-supervised-learning/api/docker-compose.yml up -d
+version: "3.9"
+
+services:
+  bank-loan-approval-api:
+    build:
+      context: .
+    image: bank-api:latest
+    container_name: bank-api
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - "8000:8000" # check localhost:8000/docs endpoint
+    volumes:
+      - ../datasets:/app/datasets:ro
+    restart: unless-stopped
+

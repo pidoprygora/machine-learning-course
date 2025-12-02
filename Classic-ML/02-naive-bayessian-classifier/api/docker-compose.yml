@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  usd-uah-predictor:
+    build: .
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./datasets:/app/datasets:ro
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

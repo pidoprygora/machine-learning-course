@@ -1,0 +1,5 @@
+,method,time_ms
+BM,Block Matching,6.544351577758789
+SGBM,Semi-Global Block Matching,46.33831977844238
+SIFT,SIFT Feature Matching,71.85173034667969
+Template,Template Matching,60.595035552978516

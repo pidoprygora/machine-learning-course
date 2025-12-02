@@ -1,0 +1,3 @@
+,Avg Time (ms),Avg FPS,Avg Detections
+ssd_mobilenet_v2,1183.5784912109375,0.8448953807675945,5.5
+efficientdet_d0,2259.3504190444946,0.44260509196396,2.0
